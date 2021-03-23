@@ -6,6 +6,7 @@
 </head>
 <body>
 	<h1>Usando método fetch para requisições assíncronas em JavaScript</h1>
+	<div id="minhadiv">
 	<div id="dados"></div>
 
 <script>
@@ -14,7 +15,8 @@
 		cont object = await response.jason();
 		document.querySelector("#dados").innerHTML = JSON.stringfy(object);
 	}
-
+	document.querySelector("#minhadiv").innerHTML = "<h2>Dados obtidos do servidor!</h2>";
+	
 	request();	
 </script>
 </body>
